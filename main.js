@@ -105,14 +105,14 @@ mongoose.connect(uri, {
 //         })
 
 //         //Chain Search Query Helpers to Narrow Search Results
-//         Person.find({favoriteFood:{$in:["burritos"]}}).sort({ name: "asc" })
-//               .limit(2)
-//               .select("-age")
-//               .exec((err, data) => {
-//                 try {
-//                     console.log(data)
-//                 } 
-//                 catch {
-//                     console.log(err)
-//                 }
-//             })
+        Person.find({favoriteFood:{$in:["burritos"]}}).sort({ name: "asc" })
+              .limit(2)
+              .select("-age")
+              .exec((err, data) => {
+                try {
+                    console.log(data)
+                } 
+                catch {
+                    console.log(err)
+                }
+            })

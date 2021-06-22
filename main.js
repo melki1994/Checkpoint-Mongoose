@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Person = require('./person');
 
 // Connecting to DB:
-const uri = "mongodb+srv://Takwa:takwa54321@cluster0.s6gbj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const uri = "mongodb+srv://Takwa08:melki23@cluster0.s6gbj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true})
